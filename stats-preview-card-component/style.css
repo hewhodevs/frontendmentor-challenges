@@ -4,10 +4,20 @@ body {
   margin: 0;
   background-color: #000000;
 }
+h1 {
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+p {
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+}
 #component-container {
   margin: 20px;
   border-radius: 10px;
   overflow: hidden;
+  font-family: 'Inter', sans-serif;
 }
 #image-wrapper {
   width: 100%;
@@ -20,7 +30,6 @@ img {
 }
 #main-wrapper {
   background-color: #1C1938;
-  color: #FCFCFC;
   padding: 20px;
   text-align: center;
 }
