@@ -63,10 +63,17 @@ img {
 }
 
 @media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
   #component-container {
     display: flex;
     flex-direction: row-reverse;
     max-width: 1200px;
+  }
+  #main-wrapper {
+    padding: 50px;
+    text-align: left;
   }
   #image-wrapper {
     min-width: 50%;
@@ -75,7 +82,17 @@ img {
     height: 100%;
     object-fit: cover;
   }
+  #main-paragraph {
+    padding-left: 0;
+    padding-right: 100px;
+  }
   #stats {
     display: flex;
+    margin-top: 20px;
+  }
+  .stat-container {
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 0;
   }
 }
