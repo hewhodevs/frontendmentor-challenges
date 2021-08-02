@@ -9,20 +9,23 @@ body {
   border-radius: 10px;
   overflow: hidden;
 }
+#image-wrapper {
+  width: 100%;
+  background-color: #c123ff;
+}
+img {
+  width: 100%;
+  display: block;
+  opacity: 0.5;
+}
 #main-wrapper {
   background-color: #1C1938;
   color: #FCFCFC;
   padding: 20px;
   text-align: center;
 }
-#image-wrapper {
-  width: 100%;
-  background-color: #d621ff;
-}
-img {
-  width: 100%;
-  display: block;
-  opacity: 0.5;
+#insights {
+  color: #9863C0;
 }
 .attribution { 
   font-size: 11px; 
