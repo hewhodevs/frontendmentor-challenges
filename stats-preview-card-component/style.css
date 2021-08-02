@@ -23,7 +23,6 @@ p {
   font-family: 'Inter', sans-serif;
 }
 #image-wrapper {
-  width: 100%;
   background-color: #c123ff;
 }
 img {
@@ -61,4 +60,24 @@ img {
 }
 .attribution a { 
   color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 768px) {
+  #component-container {
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid red;
+    max-width: 1200px;
+  }
+  #image-wrapper {
+    min-width: 50%;
+  }
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+  #stats {
+    border: 1px solid red;
+    display: flex;
+  }
 }
