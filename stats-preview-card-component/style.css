@@ -55,11 +55,15 @@ img {
   padding: 10px;
 }
 .attribution { 
-  font-size: 11px; 
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 12px; 
   text-align: center; 
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 50px;
 }
 .attribution a { 
-  color: hsl(228, 45%, 44%); 
+  color: hsl(192, 100%, 42%); 
 }
 
 @media only screen and (min-width: 768px) {
