@@ -5,10 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
   <meta name="description" content="Business Statistics Summary">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+  <!-- Start CSS stylesheet loading to avoid render blocking -->
+    <link rel="preload" href="/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <!-- No JS fallback -->
+    <noscript><link rel="stylesheet" href="/style.css"></noscript>
+  <!-- end CSS stylesheet loading -->
+  <!-- Start Font loading to avoid render blocking -->
+    <!-- connect to domain of font files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- optionally increase loading priority -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+    <!-- async CSS -->
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap">
+    <!-- no-JS fallback -->
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap">
+    </noscript>
+  <!-- end font loading  -->
   <title>Frontend Mentor | Stats preview card component</title>
 
 </head>
