@@ -29,7 +29,7 @@ img {
   width: 100%;
   display: block;
   opacity: 0.5;
-  background-image: url(../stats-preview-card-component/images/image-header-mobile.jpg);
+  background-image: url(/images/image-header-mobile.jpg);
 }
 #main-wrapper {
   background-color: #1C1938;
@@ -96,7 +96,7 @@ img {
   img {
     height: 100%;
     object-fit: cover;
-    background-image: url(../stats-preview-card-component/images/image-header-desktop.jpg);
+    background-image: url(/images/image-header-desktop.jpg);
   }
   #main-paragraph {
     padding-left: 0;
