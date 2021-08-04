@@ -8,6 +8,9 @@
   --lexand: 'Lexend Deca', sans-serif;
   --big-shoulders: 'Big Shoulders Display', cursive;
 }
+body {
+  background-color: var(--white);
+}
 h2 {
   color: var(--very-light-grey);
   font-family: var(--big-shoulders);
@@ -67,7 +70,7 @@ button {
 }
 
 /* Srart tablet and desktop styles */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
   body {
     height: 100vh;
     padding: 0;
