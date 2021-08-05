@@ -6,7 +6,7 @@
   <meta name="description" content="Business Statistics Summary">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <!-- Start CSS stylesheet loading to avoid render blocking -->
-    <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'">
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.removeAttribute('as');this.rel='stylesheet'">
     <!-- No JS fallback -->
     <noscript><link rel="stylesheet" href="/style.css"></noscript>
   <!-- end CSS stylesheet loading -->
