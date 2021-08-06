@@ -1,35 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Start head -->
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="Profile Card Component">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/faviconName.png">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <!-- Start CSS stylesheet loading to avoid render blocking -->
+    <link rel="preload" href="/style.css" as="style" onload="this.onload=null;this.removeAttribute('as');this.rel='stylesheet'">
+    <!-- No JS fallback -->
+    <noscript><link rel="stylesheet" href="/style.css"></noscript>
+  <!-- End CSS stylesheet loading -->
+
+  <!-- Start Font loading to avoid render blocking -->
+    <!-- connect to domain of google font files -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- optionally increase loading priority -->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- async CSS -->
+    <link rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap">
+    <!-- no-JS fallback -->
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap">
+    </noscript>
+  <!-- End Font Loading  -->
+
   <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
+<!-- End head -->
+
 <body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
+  <main>
+    <div class="component-container">
+      <div id="top-area">
+        <div id="top-bgimage"></div>
+      </div>
+      <div id="bottom-area">
+        <!-- Start #user-info -->
+        <div id="user-info">
+          <img src="/images/image-victor.jpg" alt="profile picture of victor" width="96" height="96">
+          <h2 id="name">Victor Crest <span id="age">26</span></h2>
+          <p id="location">London</p>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <h2>80K</h2>
+            <p>Followers</p>
+          </div>
+          <div class="stat">
+            <h2>803K</h2>
+            <p>Likes</p>
+          </div>
+          <div class="stat">
+            <h2>1.4K</h2>
+            <p>Photos</p>
+          </div>
+        </div>
+        <!-- End #user-info -->
+      </div>
+    </div>
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Joshua Kelly</a>.
   </div>
 </body>
 </html>
