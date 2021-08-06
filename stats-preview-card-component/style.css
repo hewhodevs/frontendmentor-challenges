@@ -23,13 +23,13 @@ p {
   font-family: 'Inter', sans-serif;
 }
 #image-wrapper {
-  background-color: #c123ff;
+  background-color: #b700ff;
 }
 img {
   width: 100%;
   height: auto;
   display: block;
-  opacity: 0.5;
+  opacity: 0.7;
   background-image: url(/images/image-header-mobile.jpg);
 }
 #main-wrapper {
