@@ -32,23 +32,43 @@
 </head>
 <!-- End head -->
 <body>
-
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<main>
+  <!-- Start .component-container -->
+  <div class="component-container">
+    <!-- Start #hero-image -->
+    <img id="hero-image" src="/images/illustration-hero.svg" height="220" width="450" alt="Cartoon illustration of a person dancing throught the night to the music played from their mobile device">
+    <!-- End #hero-image -->
+    <!-- Start #order-wrapper -->
+    <div id="order-wrapper">
+      <h1 id="order-summary-heading">Order Summary</h1>
+      <p id="order-summary-description">
+        You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!
+      </p>
+      <!-- Starat #plan-wrapper -->
+      <div id="plan-wrapper">
+        <img id="music-icon" src="/images/icon-music.svg" height="48" width="48" alt="A musical note icon">
+        <div id="plan-details-wrapper">
+          <h2 id="plan-type">Annual Plan</h2>
+          <p id="plan-cost">$59.99/year</p>
+        </div>
+        <div id="change-plan-wrapper">
+          <a href="#">Change</a>
+        </div>
+      </div>
+      <!-- End #plan-wrapper -->
+      <button id="payment-button">Proceed to Payment</button>
+      <button id="cancel-button">Cancel Order</button>
+    </div>
+    <!-- End #order-wrapper -->
   </div>
+  <!-- End .component-container -->
+</main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/hewhodevs" rel="noopener">Joshua Kelly</a>.
+    </div>
+  </footer>
 </body>
 </html>
