@@ -26,7 +26,7 @@ body {
   background-color: #e6edff;
 }
 .component-container {
-  max-width: 400px;
+  max-width: 450px;
   margin: 20px;
   border-radius: 25px;
   overflow: hidden;
@@ -72,7 +72,7 @@ body {
 }
 #plan-type {
   font-size: 1rem;
-  font-weight: 900;
+  font-weight: 700;
   margin: 0;
 }
 #plan-cost {
@@ -83,6 +83,9 @@ body {
 }
 #change-plan-wrapper {
   font-weight: 700;
+}
+#change-link {
+  color: var(--bright-blue);
 }
 #payment-button, #cancel-button {
   width: 100%;
@@ -130,5 +133,8 @@ body {
     background-repeat: no-repeat;
     background-position: top;
     background-color: #e6edff;
+  }
+  #order-wrapper {
+    padding: 25px 45px;
   }
 }
