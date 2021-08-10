@@ -1,3 +1,10 @@
+.article-preview {}
+.article-preview__image {}
+.article-preview__title {}
+.article-preview__description {}
+.article-preview__author {}
+.article-preview__publish-date {}
+
 /* start attribution */
 .attribution {
   font-size: 11px;
