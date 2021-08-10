@@ -1,3 +1,14 @@
+:root {
+  --manrope: 'Manrope', sans-serif;
+  --verydark-grey-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-greyish-blue: hsl(210, 46%, 95%);
+  --fontsize: 13px;
+}
+body {
+  font-size: var(--fontsize);
+}
 .article-preview {}
 .article-preview__image {}
 .article-preview__title {}
