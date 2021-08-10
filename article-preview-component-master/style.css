@@ -7,14 +7,30 @@
   --fontsize: 13px;
 }
 body {
+  padding: 20px;
+  box-sizing: border-box;
   font-size: var(--fontsize);
+  background-color: #F0F0F0;
 }
-.article-preview {}
-.article-preview__image {}
-.article-preview__title {}
-.article-preview__description {}
-.article-preview__author {}
-.article-preview__publish-date {}
+.article-preview {
+  font-family: var(--manrope);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #FEFEFE;
+}
+.article-preview__image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+.article-preview__content {}
+.content__title {
+  font-weight: 700;
+}
+.content__description {
+}
+.content__author {}
+.content__publish-date {}
 
 /* start attribution */
 .attribution {
