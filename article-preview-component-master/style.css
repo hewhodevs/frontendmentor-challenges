@@ -87,10 +87,11 @@ body {
   background-color: var(--light-greyish-blue);
   border-radius: 50%;
 }
-
+.footer {
+  margin: 30px;
+}
 /* start attribution */
 .attribution {
-  margin-top: 20px;
   font-family: var(--manrope);
   font-size: 11px;
   text-align: center;
