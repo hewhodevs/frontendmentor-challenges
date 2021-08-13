@@ -87,7 +87,7 @@ body {
   background-color: var(--light-greyish-blue);
   border-radius: 50%;
 }
-.footer {
+footer {
   margin: 30px;
 }
 /* start attribution */
@@ -102,7 +102,7 @@ body {
 /* end attribution */
 
 @media only screen and (min-width: 768px) {
-  .body {
+  body {
     height: 100vh;
     display: flex;
     flex-direction: column;
