@@ -31,7 +31,7 @@ body {
     0 100px 80px rgba(0, 0, 0, 0.07);
 }
 .article-preview__image-wrapper {
-  height: 250px;
+  height: 230px;
   width: 100%;
   overflow: hidden;
 }
@@ -39,6 +39,7 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  object-position: top center;
 }
 .article-preview__content {
   padding: 26px;
@@ -104,6 +105,13 @@ footer {
 }
 /* end attribution */
 
+@media screen and (orientation:landscape) {
+  .article-preview__image {
+    object-position: center center;
+  }
+}
+
+/* Tablet and desktop device styles */
 @media only screen and (min-width: 768px) {
   body {
     height: 100vh;
