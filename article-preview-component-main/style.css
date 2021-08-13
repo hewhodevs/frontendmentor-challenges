@@ -4,6 +4,9 @@
   --desaturated-dark-blue: hsl(214, 17%, 51%);
   --grayish-blue: hsl(212, 23%, 69%);
   --light-greyish-blue: hsl(210, 46%, 95%);
+  --body-background-color: #F0F0F0;
+  --article-background-color: #FEFEFE;
+  --attribution-link-color: hsl(228, 45%, 44%);
   --fontsize: 13px;
 }
 body {
@@ -11,12 +14,12 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-size: var(--fontsize);
-  background-color: #F0F0F0;
+  background-color: var(--body-background-color);
 }
 .article-preview {
   font-family: var(--manrope);
   overflow: hidden;
-  background-color: #FEFEFE;
+  background-color: var(--article-background-color);
   margin: 10px;
     border-radius: 10px;
     box-shadow:
@@ -97,7 +100,7 @@ footer {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--attribution-link-color);
 }
 /* end attribution */
 
