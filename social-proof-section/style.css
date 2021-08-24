@@ -1,0 +1,22 @@
+/* Variables */
+:root {
+  /* Primary Colors */
+  --dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  /* Neutral Colors */
+  --dark-grey-magenta: hsl(303, 10%, 53%);
+  --light-grey-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+  /* typography */
+  /* Spartan font family, 400, 500, 700 weights available */
+  --spartan: 'Spartan', sans-serif;
+  --normal-weight: 400;
+  --medium-weight: 500;
+  --bold-weight: 700;
+  --font-size: 16px;
+
+}
+/* Tablet and desktop styles */
+@media only screen and (min-width: 768px) {
+  
+}
