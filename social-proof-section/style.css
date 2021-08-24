@@ -16,6 +16,29 @@
   --font-size: 16px;
 
 }
+
+body {
+  font-size: var(--font-size);
+  font-family: var(--spartan);
+}
+
+.social-proof__intro {
+  text-align: center;
+}
+.social-proof__intro > h2 {
+  padding: 30px 20px 0 20px;
+  color: var(--dark-magenta);
+  font-size: 2rem;
+  font-weight: var(--bold-weight);
+  line-height: 1;
+}
+.social-proof__intro > p {
+  color: var(--dark-grey-magenta);
+  font-size: var(--font-size);
+  font-weight: var(--medium-weight);
+  line-height: 1.6rem;
+}
+
 /* Tablet and desktop styles */
 @media only screen and (min-width: 768px) {
   
