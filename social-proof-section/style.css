@@ -122,5 +122,48 @@ footer {
 
 /* Tablet and desktop styles */
 @media only screen and (min-width: 768px) {
-  
+  body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+  }
+  .social-proof {
+    padding: 50px;
+    max-width: 1200px;
+  }
+  .desktop-top {
+    display: flex;
+  }
+  .social-proof__intro {
+    width: 50%;
+    padding-right: 100px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .social-proof__intro > h2 {
+    padding: 0;
+  }
+  .ratings {
+    margin: 0;
+    flex-grow: 1;
+  }
+  .testimonials {
+    display: flex;
+    margin-top: 0;
+  }
+  .review {
+    margin: 0 10px;
+  }
+  .review:first-of-type {
+    margin-left: 0;
+  }
+  .review:last-of-type {
+    margin-right: 0;
+  }
 }
