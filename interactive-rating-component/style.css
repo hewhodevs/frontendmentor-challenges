@@ -6,4 +6,7 @@
   --dark-blue: hsl(213, 19%, 18%);
   --very-dark-blue: hsl(216, 12%, 8%);
   --p-font-size: 15px;
+  --weight-regular: 400;
+  --weight-bold: 700;
+  --overpass: 'Overpass', sans-serif;
 }
