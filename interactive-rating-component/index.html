@@ -15,33 +15,33 @@
 <body>
   <main>
     <div class="rating-component">
-      <img src="/images/icon-star.svg" alt="an orange star icon">
-      <h1>How did we do?</h1>
-      <p>Please let us know how we did with you support request. All feedback is appreciated to help us improve our offering.</p>
+      <img src="/images/icon-star.svg" alt="an orange star icon" class="rating__icon">
+      <h1 class="rating__title">How did we do?</h1>
+      <p class="rating__description">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
       <form action="">
-        <fieldset id="ratings-group">
+        <fieldset id="ratings-group" class="rating__fieldset">
           <div class="rating__wrapper">
-            <input type="radio" name="ratings-group" id="one" value="1">
-            <label for="one">1</label>
+            <input type="radio" name="ratings-group" id="one" value="1" class="rating__radio">
+            <label for="one" class="rating__label">1</label>
           </div>
           <div class="rating__wrapper">
-            <input type="radio" name="ratings-group" id="two" value="2">
-            <label for="two">2</label>
+            <input type="radio" name="ratings-group" id="two" value="2" class="rating__radio">
+            <label for="two" class="rating__label">2</label>
           </div>
           <div class="rating__wrapper">
-            <input type="radio" name="ratings-group" id="three" value="3">
-            <label for="three">3</label>
+            <input type="radio" name="ratings-group" id="three" value="3" class="rating__radio">
+            <label for="three" class="rating__label">3</label>
           </div>
           <div class="rating__wrapper">
-            <input type="radio" name="ratings-group" id="four" value="4">
-            <label for="four">4</label>
+            <input type="radio" name="ratings-group" id="four" value="4" class="rating__radio">
+            <label for="four" class="rating__label">4</label>
           </div>
           <div class="rating__wrapper">
-            <input type="radio" name="ratings-group" id="five" value="5">
-            <label for="five">5</label>
+            <input type="radio" name="ratings-group" id="five" value="5" class="rating__radio">
+            <label for="five" class="rating__label">5</label>
           </div>
         </fieldset>
-        <button type="submit">Submit</button>
+        <button type="submit" class="rating__submit-button">Submit</button>
       </form>
     </div>
   </main>
