@@ -53,6 +53,7 @@ body {
   margin-left: auto;
 }
 .card__line {
+  margin: 0 0 10px 0;
   height: 1px;
   background-color: var(--line);
   border: none;
