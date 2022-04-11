@@ -25,9 +25,29 @@ body {
   background-color: var(--card-BG);
   border-radius: 20px;
 }
+.card__img-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
 .card__preview-img {
+  display: block;
   width: 100%;
-  border-radius: 20px;
+}
+.view-more__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.view-more__link:hover {
+  opacity: 1;
+  background-color: hsl(178, 100%, 50%, 0.4);
 }
 .card__title {
   font-size: 1.4rem;
