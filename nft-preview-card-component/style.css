@@ -49,10 +49,16 @@ body {
   opacity: 1;
   background-color: hsl(178, 100%, 50%, 0.4);
 }
+.card__title-link {
+  text-decoration: none;
+}
 .card__title {
   font-size: 1.4rem;
   font-weight: var(--weight-regular);
   color: var(--white);
+}
+.card__title:hover {
+  color: var(--cyan);
 }
 .card__description, 
 .card__time-remaining,
@@ -90,6 +96,10 @@ body {
 }
 .card__creator-name {
   color: var(--white);
+  text-decoration: none;
+}
+.card__creator-name:hover {
+  color: var(--cyan);
 }
 .flex {
   display: flex;
