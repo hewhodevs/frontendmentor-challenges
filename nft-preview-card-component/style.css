@@ -6,3 +6,7 @@
   --line: hsl(215, 32%, 27%);
   --white: hsl(0, 0%, 100%);
 }
+
+body {
+  font-size: 18px;
+}
