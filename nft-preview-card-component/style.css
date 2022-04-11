@@ -5,8 +5,13 @@
   --card-BG: hsl(216, 50%, 16%);
   --line: hsl(215, 32%, 27%);
   --white: hsl(0, 0%, 100%);
+  --outfit-font-family: 'Outfit', sans-serif;
 }
 
 body {
   font-size: 18px;
+}
+
+.article-nft-card {
+  font-family: var(--outfit-font-family);
 }
