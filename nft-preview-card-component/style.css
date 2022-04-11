@@ -6,12 +6,69 @@
   --line: hsl(215, 32%, 27%);
   --white: hsl(0, 0%, 100%);
   --outfit-font-family: 'Outfit', sans-serif;
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-semi-bold: 600;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
+  background-color: var(--main-BG);
 }
-
 .article-nft-card {
+  margin: 20px;
+  padding: 20px;
   font-family: var(--outfit-font-family);
+  background-color: var(--card-BG);
+  border-radius: 20px;
+}
+.card__preview-img {
+  width: 100%;
+  border-radius: 20px;
+}
+.card__title {
+  font-size: 1.4rem;
+  font-weight: var(--weight-regular);
+  color: var(--white);
+}
+.card__description, 
+.card__time-remaining,
+.card__creator-description {
+  color: var(--soft-blue);
+  font-weight: var(--weight-light);
+  font-size: 1rem;
+}
+.card__description {
+  line-height: 1.6;
+}
+.card__price {
+  color: var(--cyan);
+  font-size: 1rem;
+  font-weight: var(--weight-semi-bold);
+}
+.card__time-remaining {
+  margin-left: auto;
+}
+.card__line {
+  height: 1px;
+  background-color: var(--line);
+  border: none;
+}
+.card__creator-details-container {
+  display: flex;
+  align-items: center;
+}
+.card__creator-img {
+  height: 35px;
+  margin-right: 10px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+.card__creator-name {
+  color: var(--white);
+}
+.flex {
+  display: flex;
 }
