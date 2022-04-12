@@ -75,6 +75,7 @@ body {
 
 .rating__label {
   font-size: 1em;
+  font-weight: var(--weight-bold);
   line-height: 1em;
   color: var(--light-grey);
   margin-bottom: -4px;
@@ -92,4 +93,15 @@ body {
   font-size: 0.9em;
   letter-spacing: 3px;
   text-transform: uppercase;
+}
+
+.rating__submit-button:hover {
+  color: var(--orange);
+  background-color: var(--white);
+}
+.rating__wrapper:hover {
+  background-color: var(--orange);
+}
+.rating__wrapper:hover > label {
+  color: var(--white);
 }
