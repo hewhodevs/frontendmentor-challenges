@@ -59,26 +59,29 @@ body {
 }
 
 .rating__wrapper {
-  background-color: var(--dark-blue);
-  width: 25px;
-  height: 25px;
-  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
 }
 
 .rating__radio {
   display: none;
 }
 
+.rating__radio:checked+label {
+  color: var(--white);
+  background-color: var(--medium-grey);
+}
+
 .rating__label {
-  font-size: 1em;
+  width: 45px;
+  height: 45px;
+  line-height: 47px;
+  text-align: center;
+  border-radius: 50%;
   font-weight: var(--weight-bold);
-  line-height: 1em;
   color: var(--light-grey);
-  margin-bottom: -4px;
+  background-color: var(--dark-blue);
 }
 
 .rating__submit-button {
@@ -99,9 +102,7 @@ body {
   color: var(--orange);
   background-color: var(--white);
 }
-.rating__wrapper:hover {
-  background-color: var(--orange);
-}
-.rating__wrapper:hover > label {
+.rating__label:hover {
   color: var(--white);
+  background-color: var(--orange);
 }
