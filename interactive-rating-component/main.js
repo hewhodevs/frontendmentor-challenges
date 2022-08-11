@@ -2,7 +2,7 @@ const submitButton = document.getElementById('rating__submit-button');
 const ratingFormContainer = document.getElementById('rating-form-container');
 const thankyouConfirmationContainer = document.getElementById('thankyou-confirmation-container');
 
-ratingFormContainer.onclick = () => {
+submitButton.onclick = () => {
   hideRatingFormContainer();
   showThankyouConfirmationContainer();
   return false;
