@@ -15,34 +15,42 @@
 <body>
   <main>
     <div class="rating-component">
-      <img src="/images/icon-star.svg" alt="an orange star icon" class="rating__icon">
-      <h1 class="rating__title">How did we do?</h1>
-      <p class="rating__description">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-      <form action="">
-        <fieldset id="ratings-group" class="rating__fieldset">
-          <div class="rating__wrapper">
-            <input type="radio" name="ratings-group" id="one" value="1" class="rating__radio">
-            <label for="one" class="rating__label">1</label>
-          </div>
-          <div class="rating__wrapper">
-            <input type="radio" name="ratings-group" id="two" value="2" class="rating__radio">
-            <label for="two" class="rating__label">2</label>
-          </div>
-          <div class="rating__wrapper">
-            <input type="radio" name="ratings-group" id="three" value="3" class="rating__radio">
-            <label for="three" class="rating__label">3</label>
-          </div>
-          <div class="rating__wrapper">
-            <input type="radio" name="ratings-group" id="four" value="4" class="rating__radio">
-            <label for="four" class="rating__label">4</label>
-          </div>
-          <div class="rating__wrapper">
-            <input type="radio" name="ratings-group" id="five" value="5" class="rating__radio">
-            <label for="five" class="rating__label">5</label>
-          </div>
-        </fieldset>
-        <button type="submit" class="rating__submit-button">Submit</button>
-      </form>
+      <div class="rating-form-container">
+        <img src="/images/icon-star.svg" alt="an orange star icon" class="rating__icon">
+        <h1 class="rating__title">How did we do?</h1>
+        <p class="rating__description">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <form action="">
+          <fieldset id="ratings-group" class="rating__fieldset">
+            <div class="rating__wrapper">
+              <input type="radio" name="ratings-group" id="one" value="1" class="rating__radio">
+              <label for="one" class="rating__label">1</label>
+            </div>
+            <div class="rating__wrapper">
+              <input type="radio" name="ratings-group" id="two" value="2" class="rating__radio">
+              <label for="two" class="rating__label">2</label>
+            </div>
+            <div class="rating__wrapper">
+              <input type="radio" name="ratings-group" id="three" value="3" class="rating__radio">
+              <label for="three" class="rating__label">3</label>
+            </div>
+            <div class="rating__wrapper">
+              <input type="radio" name="ratings-group" id="four" value="4" class="rating__radio">
+              <label for="four" class="rating__label">4</label>
+            </div>
+            <div class="rating__wrapper">
+              <input type="radio" name="ratings-group" id="five" value="5" class="rating__radio">
+              <label for="five" class="rating__label">5</label>
+            </div>
+          </fieldset>
+          <button type="submit" class="rating__submit-button">Submit</button>
+        </form>
+      </div>
+      <div class="thankyou-confirmation-container">
+        <img class="thankyou__image" src="/images/illustration-thank-you.svg" width="150" alt="A vector image of mobile phone processing a form submission">
+        <p class="thankyou__rating">You selected 4 out of 5</p>
+        <h1 class="thankyou__heading">Thank you!</h1>
+        <p class="thankyou__message">We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+      </div>
     </div>
   </main>
   <script src="/main.js"></script>

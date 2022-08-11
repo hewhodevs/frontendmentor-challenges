@@ -22,8 +22,8 @@ body {
 }
 
 .rating-component {
-  min-width: 300px;
-  max-width: 300px;
+  min-width: 340px;
+  max-width: 340px;
   padding: 20px;
   margin: 20px;
   font-size: 15px;
@@ -32,28 +32,32 @@ body {
   background: linear-gradient(180deg, var(--dark-blue) 0%, var(--very-dark-blue) 100%);
 }
 
+.rating-form-container {
+  display: block;
+}
+
 .rating__icon {
   background-color: hsl(216, 12%, 54%, 0.1);
   padding: 15px;
   border-radius: 50%;
 }
 
-.rating__title {
+.rating__title, .thankyou__heading {
   color: var(--white);
   font-size: 1.6em;
 }
 
-.rating__description {
+.rating__description, .thankyou__message {
   color: var(--light-grey);
   font-size: 1em;
   line-height: 1.6;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .rating__fieldset {
   display: flex;
   padding: 0;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   justify-content: space-between;
   border: none;
 }
@@ -74,9 +78,9 @@ body {
 }
 
 .rating__label {
-  width: 45px;
-  height: 45px;
-  line-height: 47px;
+  width: 55px;
+  height: 55px;
+  line-height: 57px;
   text-align: center;
   border-radius: 50%;
   font-weight: var(--weight-bold);
@@ -105,4 +109,28 @@ body {
 .rating__label:hover {
   color: var(--white);
   background-color: var(--orange);
+}
+
+.thankyou-confirmation-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thankyou__image {
+  width: 150px;
+}
+
+.thankyou__rating {
+  padding: 5px 15px;
+  margin: 30px 0 5px 0;
+  color: var(--orange);
+  opacity: 0.9;
+  background-color: var(--dark-blue);
+  border-radius: 15px;
+}
+
+.thankyou__message {
+  margin: 0;
+  text-align: center;
 }
