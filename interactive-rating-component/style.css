@@ -32,8 +32,18 @@ body {
   background: linear-gradient(180deg, var(--dark-blue) 0%, var(--very-dark-blue) 100%);
 }
 
-.rating-form-container {
+.show-rating-form {
   display: block;
+}
+
+.show-thankyou-confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
 }
 
 .rating__icon {
@@ -111,10 +121,8 @@ body {
   background-color: var(--orange);
 }
 
-.thankyou-confirmation-container {
-  display: none;
-  flex-direction: column;
-  align-items: center;
+#thankyou-confirmation-container {
+  padding: 20px 0;
 }
 
 .thankyou__image {
