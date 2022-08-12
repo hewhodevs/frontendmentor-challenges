@@ -64,7 +64,7 @@ body {
   margin-bottom: 25px;
 }
 
-.rating__fieldset {
+.rating__group {
   display: flex;
   padding: 0;
   margin-bottom: 10px;
