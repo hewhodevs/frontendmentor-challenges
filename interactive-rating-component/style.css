@@ -139,7 +139,7 @@ body {
   color: var(--medium-grey);
   background-color: var(--dark-blue);
   opacity: 0.5;
-  cursor: default;
+  cursor: not-allowed;
 }
 
 .rating__label:hover {
