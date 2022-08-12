@@ -115,17 +115,20 @@ body {
 .rating__submit-button:hover {
   color: var(--orange);
   background-color: var(--white);
+  cursor: pointer;
 }
 
 .rating__submit-button:disabled {
   color: var(--medium-grey);
   background-color: var(--dark-blue);
   opacity: 0.5;
+  cursor: default;
 }
 
 .rating__label:hover {
   color: var(--white);
   background-color: var(--orange);
+  cursor: pointer;
 }
 
 #thankyou-confirmation-container {
