@@ -116,6 +116,13 @@ body {
   color: var(--orange);
   background-color: var(--white);
 }
+
+.rating__submit-button:disabled {
+  color: var(--medium-grey);
+  background-color: var(--dark-blue);
+  opacity: 0.5;
+}
+
 .rating__label:hover {
   color: var(--white);
   background-color: var(--orange);

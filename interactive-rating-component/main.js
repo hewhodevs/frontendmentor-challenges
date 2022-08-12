@@ -1,4 +1,14 @@
-document.getElementById('rating__submit-button').onclick = (e) => {
+const submitButton = document.getElementById('rating__submit-button');
+const ratingsGroup = document.getElementsByName('ratings-group');
+
+// Enable the submit button only once a rating is selected by the user
+ratingsGroup.forEach(ratingInput => {
+  ratingInput.addEventListener('change', () => {
+    submitButton.disabled = false;
+  });
+});
+
+submitButton.onclick = (e) => {
   e.preventDefault();
   const ratingSubmitted = getUserSelectedRating();
   hideRatingFormContainer();
@@ -19,7 +29,6 @@ function showThankyouConfirmationContainer() {
 }
 
 function getUserSelectedRating() {
-  const ratingsGroup = document.getElementsByName('ratings-group');
   for (let i = 0; i < ratingsGroup.length; i++) {
     const rating = ratingsGroup[i];
     if (rating.checked) {
