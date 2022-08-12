@@ -21,6 +21,7 @@ body {
   background-color: hsl(0, 0%, 0%);
 }
 
+/* Hide the default checkbox, without blocking keyboard controls for accessibility */
 .rating-component {
   min-width: 340px;
   max-width: 340px;
@@ -78,8 +79,24 @@ body {
   justify-content: center;
 }
 
-.rating__radio {
-  display: none;
+/* Class used to accessibly hide the radio button components */
+/* Read more on this at https://a11y-guidelines.orange.com/en/web/components-examples/accessible-hiding/ */
+.visually-hidden {
+  position: absolute;
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0,0,0,0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
+}
+
+/* When the checkbox focused, outline the label in orange to make the focus state clear to the user*/
+.rating__radio:focus+label {
+  outline: var(--orange) 0.25rem solid;
 }
 
 .rating__radio:checked+label {
