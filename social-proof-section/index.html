@@ -34,7 +34,6 @@
     <main>
       <!-- Start .social-proof-section -->
       <section class="social-proof">
-
         <div class="desktop-top">
           <!-- Start .social-proof__intro -->
           <div class="social-proof__intro">
@@ -82,48 +81,61 @@
         </div>
         <!-- Start .testimonials -->
         <div class="testimonials">
-          <div class="review">
-            <div class="review__author">
-              <img src="./images/image-colton.jpg" width="80" height="80" alt="user profile picture">
+
+          <!-- Using blockquote for semantics -->
+          <!-- Read  more at https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote -->
+          <!-- Also placing figcaption before quote, see https://www.w3.org/Style/Examples/007/figures.en.html#top-caption2 -->
+          <!-- Testimonal 1 - Colton Smith -->
+          <figure class="review">
+            <figcaption class="review__author">
+              <img src="./images/image-colton.jpg" width="80" height="80" alt="Colton Smith">
               <div class="author__details">
-                <h3 class="author__name">Colton Smith</h3>
-                <h3 class="author__title">Verified Buyer</h3>
+                <span class="author__name">Colton Smith</span>
+                <cite><span class="author__title">Verified Buyer</span></cite>
               </div>
-            </div>
-            <p>
-              "We needed the same printed design as the one we had ordered a week prior.
-              Not only did they find the original order, but we also received it in time.
-              Excellent!"
-            </p>
-          </div>
+            </figcaption>
+            <blockquote>
+              <p>
+                "We needed the same printed design as the one we had ordered a week prior.
+                Not only did they find the original order, but we also received it in time.
+                Excellent!"
+              </p>
+            </blockquote>
+          </figure>
         
-          <div class="review">
-            <div class="review__author">
-              <img src="./images/image-irene.jpg" width="80" height="80" alt="user profile picture">
+          <!-- Testimonal 2 - Irene Roberts -->
+          <figure class="review">
+            <figcaption class="review__author">
+              <img src="./images/image-irene.jpg" width="80" height="80" alt="Irene Roberts">
               <div class="author__details">
-                <h3 class="author__name">Irene Roberts</h3>
-                <h3 class="author__title">Verified Buyer</h3>
+                <span class="author__name">Irene Roberts</span>
+                <cite><span class="author__title">Verified Buyer</span></cite>
               </div>
-            </div>
-            <p>
-              "Customer service is always excellent and very quick turn around. Completely
-              delighted with the simplicity of the purchase and the speed of delivery."
-            </p>
-          </div>
+            </figcaption>
+            <blockquote>
+              <p>
+                "Customer service is always excellent and very quick turn around. Completely
+                delighted with the simplicity of the purchase and the speed of delivery."
+              </p>
+            </blockquote>
+          </figure>
         
-          <div class="review">
-            <div class="review__author">
-              <img src="./images/image-anne.jpg" width="80" height="80"alt="user profile picture">
+          <!-- Testimonal 3 - Anne Wallace -->
+          <figure class="review">
+            <figcaption class="review__author">
+              <img src="./images/image-anne.jpg" width="80" height="80"alt="Anne Wallace">
               <div class="author__details">
-                <h3 class="author__name">Anne Wallace</h3>
-                <h3 class="author__title">Verified Buyer</h3>
+                <span class="author__name">Anne Wallace</span>
+                <cite><span class="author__title">Verified Buyer</span></cite>
               </div>
-            </div>
-            <p>
-              "Put an order with this company and can only praise them for the very high
-              standard. Will definitely use them again and recommend them to everyone!"
-            </p>
-          </div>
+            </figcaption>
+            <blockquote>
+              <p>
+                "Put an order with this company and can only praise them for the very high
+                standard. Will definitely use them again and recommend them to everyone!"
+              </p>
+            </blockquote>
+          </figure>
         </div>
         <!-- End .testimonials -->
       </section>
