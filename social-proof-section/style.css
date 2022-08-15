@@ -120,8 +120,8 @@ footer {
   margin-bottom: 50px;
 }
 
-/* Tablet and desktop styles */
-@media only screen and (min-width: 768px) {
+/* Laptop and desktop styles styles */
+@media only screen and (min-width: 1024px) {
   body {
     width: 100%;
     min-height: 100vh;
