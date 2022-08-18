@@ -12,3 +12,104 @@
   --primaryFontFamily: 'Fraunces', serif;
   --secondaryFontFamily: 'Montserrat', sans-serif;
 }
+
+/* Mobile first design */
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  background-color: var(--cream);
+}
+
+.product-preview {
+  max-width: 350px;
+  margin: 12px;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: var(--white);
+}
+
+.product-preview__image {
+  max-width: 100%;
+}
+
+.product-preview__details {
+  padding: 24px;
+}
+
+.details__category {
+  color: var(--dark-grayish-blue);
+  font-family: var(--secondaryFontFamily);
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.details__title {
+  margin: 15px 0;
+  color: var(--very-dark-blue);
+  font-family: var(--primaryFontFamily);
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+.details__description {
+  color: var(--dark-grayish-blue);
+  font-family: var(--secondaryFontFamily);
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+.details__pricing-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.details__price {
+  color: var(--dark-cyan);
+  font-family: var(--primaryFontFamily);
+  font-size: 2rem;
+}
+
+.details__old-price {
+  margin-left: 20px;
+  color: var(--dark-grayish-blue);
+  font-family: var(--secondaryFontFamily);
+  font-size: 0.8rem;
+}
+
+.details__add-to-cart-button {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+  font-family: var(--secondaryFontFamily);
+  font-weight: 700;
+  background-color: var(--dark-cyan);
+  border: none;
+  border-radius: 10px;
+}
+
+.details__add-to-cart-button > span {
+  margin-left: 5px;
+}
+
+.details__add-to-cart-button:hover {
+  background-color: hsl(159, 37%, 22%);
+}
+
+/* Overriding styles for desktop screens */
+@media only screen and (min-width: 1440px) {
+  
+}
