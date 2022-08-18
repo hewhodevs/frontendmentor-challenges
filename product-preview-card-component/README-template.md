@@ -51,17 +51,11 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+The biggeset lesson I learned from this challenge was darkening a button background color on hover, without also darkening the buttons text. My approach was to wrap the button in a div tag, assign the div the green background, and make the button transparent so the green shows through. When the button is hovered we can apply a change to the background color alpha value using rgba, and this creates a darkened background color effect without also darkening the buttons text (which occurs when using filter: brightness(0.85) as an example).
 
 To see how you can add code snippets, see below:
 
