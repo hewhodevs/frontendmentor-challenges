@@ -73,6 +73,7 @@ footer {
 }
 
 .details__description {
+  margin: 25px 0;
   color: var(--dark-grayish-blue);
   font-family: var(--secondaryFontFamily);
   font-weight: 500;
@@ -83,7 +84,7 @@ footer {
 .details__pricing-wrapper {
   display: flex;
   align-items: center;
-  margin: 15px 0;
+  margin: 25px 0;
 }
 
 .details__price {
@@ -139,5 +140,11 @@ footer {
 
 /* Overriding styles for desktop screens */
 @media only screen and (min-width: 1440px) {
-  
+  .product-preview {
+    max-width: 600px;
+    display: flex;
+  }
+  .product-preview__image {
+    max-width: 50%;
+  }
 }
