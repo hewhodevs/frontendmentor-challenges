@@ -7,42 +7,43 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Product preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
 
-  <article class="product-preview">
-    <img class="product-preview__image" src="/images/image-product-mobile.jpg" alt="Gabrielle Essense Eua De Parfum">
-    <div class="product-preview__details">
-      <header>
-        <div class="details__category">Perfume</div>
-        <h1 class="details__title">Gabrielle Essence Eau De Parfum</h1>
-      </header>
-      <p class="details__description">
-        A floral, solar and voluptuous interpretation composed by Olivier Polge,
-        Perfumer-Creator for the House of CHANEL.
-      </p>
-      <div class="details__pricing-wrapper">
-        <b class="details__price">$149.99</b>
-        <s class="details__old-price">$169.99</s>
+  <main>
+    <article class="product-preview">
+      <img class="product-preview__image" src="/images/image-product-mobile.jpg" alt="Gabrielle Essense Eua De Parfum">
+      <div class="product-preview__details">
+        <header>
+          <div class="details__category">Perfume</div>
+          <h1 class="details__title">Gabrielle Essence Eau De Parfum</h1>
+        </header>
+        <p class="details__description">
+          A floral, solar and voluptuous interpretation composed by Olivier Polge,
+          Perfumer-Creator for the House of CHANEL.
+        </p>
+        <div class="details__pricing-wrapper">
+          <b class="details__price">$149.99</b>
+          <s class="details__old-price">$169.99</s>
+        </div>
+        <div class="add-to-cart-button-wrapper">
+          <button class="details__add-to-cart-button">
+            <img src="/images/icon-cart.svg" alt="" aria-hidden="true">
+            <span>Add to Cart</span>
+          </button>
+        </div>
       </div>
-      <div class="add-to-cart-button-wrapper">
-        <button class="details__add-to-cart-button">
-          <img src="/images/icon-cart.svg" alt="" aria-hidden="true">
-          <span>Add to Cart</span>
-        </button>
-      </div>
-    </div>
-  </article>
+    </article>
+  </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/hewhodevs/frontendmentor-challenges">Joshua Kelly</a>.
-  </div>
+  <footer class="attribution">
+    <div>
+      Design by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    </div>
+    <div>
+      Coded by <a href="https://github.com/hewhodevs/frontendmentor-challenges">Joshua Kelly</a>.
+    </div>
+  </footer>
+
 </body>
 </html>

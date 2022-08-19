@@ -55,7 +55,16 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-The biggeset lesson I learned from this challenge was darkening a button background color on hover, without also darkening the buttons text. My approach was to wrap the button in a div tag, assign the div the green background, and make the button transparent so the green shows through. When the button is hovered we can apply a change to the background color alpha value using rgba, and this creates a darkened background color effect without also darkening the buttons text (which occurs when using filter: brightness(0.85) as an example).
+1. Focused on semantic elements
+2. How to make a sticky footer using flexbox
+3. How to darken a button background color on hover
+
+
+1. The MDN docs recommend using the article element for a product card. I opted to use h1 as the title here, since we cant assume how nested this product card may be on a site, but typically I'd say a h2 heading is appropriate here. I also grouped the perfume "category" in the heading as it is relevant for it. A bold tag was used for the price to draw attention, rather than using a strong tag which would incorrectly imply that the price is more important than the product name or description. Alt text was used on images, and the aria-hidden=true attribute applied to the button icon as it provides no extra meaning for screen readers.
+
+2. Making a sticky footer was done by the use of flexbox to allow for variable height content designs. This was inspired by the following article by Chris Coyier [Sticky Footer, Five Ways](https://css-tricks.com/couple-takes-sticky-footer/#aa-there-is-flexbox)
+
+3. I initially tried filter:brightness(0.85) when hovering the add to cart button, but this also brightened the text which is not desired. I opted instead to wrap the button in a div, give the wrapper div the green backgroud, make the button background transparent, then alter the button background alpha value on hover. You can see a demo of this at the following codepen I made [CSS darken or lighten button background color on hover](https://codepen.io/hewhodevs/pen/oNqJmVr)
 
 To see how you can add code snippets, see below:
 
