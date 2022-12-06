@@ -11,6 +11,11 @@ body {
   background-color: var(--light-grey);
 }
 
+footer {
+  margin-top: 20px;
+  font-family: var(--outfit-font-family);
+}
+
 .qr-card {
   max-width: 270px;
   padding: 15px;
