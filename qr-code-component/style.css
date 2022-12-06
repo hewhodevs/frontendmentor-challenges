@@ -1,7 +1,7 @@
 :root {
   --white: hsl(0, 0%, 100%);
   --light-grey: hsl(212, 45%, 89%);
-  --grayish-blue: hsl(220, 15%, 55%);
+  --grayish-blue: hsl(219, 15%, 55%);
   --dark-blue: hsl(218, 44%, 22%);
   --outfit-font-family: 'Outfit', sans-serif; /* 400 and 700 font weights*/
 }
@@ -26,6 +26,7 @@ footer {
   background-color: var(--white);
   font-family: var(--outfit-font-family);
   border-radius: 15px;
+  box-shadow: 0px 5px 20px 10px rgba(123, 135, 157, 0.2);
 }
 
 .qr-card__image {
