@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Easybank landing page</title>
 
@@ -18,7 +19,18 @@
   
   <header>
     <nav>
-      <ul>
+      <div class="nav__mobile-topbar">
+        <div>
+          <a href="#home">
+            <img src="/images/logo.svg" alt="easybank">
+          </a>
+        </div>
+        <button class="nav__mobile-menu-button">
+          <span class="sr-only">Open main menu</span>
+          <img src="/images/icon-hamburger.svg" alt="">
+        </button>
+      </div>
+      <ul hidden>
         <li>
           <a href="#home">Home</a>
         </li>
@@ -35,19 +47,22 @@
           <a href="#careers">Careers</a>
         </li>
       </ul>
+      <button hidden>Request Invite</button>
     </nav>
-    <button hidden>Request Invite</button>
-    <div>
-      <img src="/images/image-mockups.png" alt="mockup designs of account balances being shown on a mobile phone">
-    </div>
-    <div>
-      <h1>Next generation digital banking</h1>
-      <p>
-        Take your financial life online. Your Easybank account will be a one-stop-shop
-        for spending, saving, budgeting, investing, and much more.
-      </p>
-      <button>Request Invite</button>
-    </div>
+
+    <section class="hero">
+      <div class="hero-image-container">
+        <img class="hero-image" src="/images/image-mockups.png" alt="mockup designs of account balances being shown on a mobile phone">
+      </div>
+      <div>
+        <h1 class="hero-heading">Next generation digital banking</h1>
+        <p class="hero-text">
+          Take your financial life online. Your Easybank account will be a one-stop-shop
+          for spending, saving, budgeting, investing, and much more.
+        </p>
+        <button>Request Invite</button>
+      </div>
+    </section>
   </header>
 
 
