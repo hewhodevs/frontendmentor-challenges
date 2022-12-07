@@ -1,4 +1,41 @@
-.signup-form-container {
+body {
+  margin: 0;
+  padding: 0;
   font-family: 'Poppins', 'Roboto', sans-serif;
   font-size: 16px;
+  background-image: url(/images/bg-intro-mobile.png);
+  background-position: center;
+  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+}
+
+.signup-form-container {
+  color: #ffffff;
+  margin: 20px;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.try-free-banner {
+  margin: 20px 0;
+  font-weight: 500;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 0px 0px rgba(0,0,0,0.2);
+  background-color: hsl(248, 32%, 49%);
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+span {
+  display: block;
+  text-align: center;
 }
